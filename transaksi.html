@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo lptop.jpg" alt="Logo Aplikasi" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Transaksi</h1>
+        <form id="transaksiForm">
+            <label for="nama">Nama Transaksi:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+            <label for="kategori">Kategori:</label>
+            <select id="kategori" name="kategori" required>
+                <option value="">Pilih Kategori</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Handphone">Handphone</option>
+            </select>
+            <button type="submit">Simpan</button>
+        </form>
+        <a href="#daftarTransaksi">Lihat Daftar Transaksi</a>
+        <section id="daftarTransaksi">
+            <h2>Daftar Transaksi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Transaksi</th>
+                        <th>Jumlah</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody id="transaksiList">
+                    <!-- Data transaksi akan ditambahkan di sini -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; TOKO L/\_PTOP</p>
+    </footer>
+</body>
+</html>
